@@ -1,10 +1,14 @@
-* {
-    font-family: Roboto, sans-serif;
-}
 body {
     margin: 0;
     background-color: blueviolet;
 }
+
+/* ==== Typography ==== */
+* {font-family: Roboto, sans-serif;}
+h1 {font-weight: 700; font-size: 30px; text-align: center;}
+p, a {font-size: 16;}
+
+
 
 /* ==== Navigation ==== */
 .Nav {
@@ -45,6 +49,37 @@ body {
 .links a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
     margin-left: 15px; 
 }
+
+/* ==== Image Carousel ==== */
+
+.carousel {
+    height: 200px;
+    background-color: orange;
+}
+
+
+/* ==== Footer ==== */
+.footer {
+    padding-top: 8px;
+    color: white;
+    background-color: #57657b;
+}
+
+.map {
+    background-color: lightgoldenrodyellow;
+}
+
+.contact-info {
+    padding: 30px 90px;
+    width: 200px;
+    background-color: #404e66;
+}
+
+.copyright {
+    padding: 1px 10px;
+    background-color: #25334d;
+    text-align: right;
+}
+
