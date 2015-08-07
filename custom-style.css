@@ -1,6 +1,50 @@
-div {
-    background-color: aqua;
-    border: 1px solid black;
-    width: 640px;
-    height: 300px;
+* {
+    font-family: Roboto, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: blueviolet;
+}
+
+/* ==== Navigation ==== */
+.Nav {
+    background-color: #56657b;
+    color: white;
+}
+
+#logo-box {
+    display: inline-block;
+    width: 400;
+    margin-left: 15px;
+    margin-bottom: -25px;
+}
+.text-logo { 
+    margin-top: 20px;
+    font-size: 55px;
+}
+#sub-text-logo {
+    font-size: 34;
+    margin-top: -60px;
+    margin-left: 3px;   
+}
+
+#left-nav {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    padding: 10px;
+    line-height: 10px;
+}
+
+.links {
+    marggin-left: 10px;
+    padding: 5px;
+    background-color: #404e66;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 15px; 
 }
