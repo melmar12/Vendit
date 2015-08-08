@@ -6,7 +6,7 @@ body {
 /* ==== Typography ==== */
 * {font-family: Roboto, sans-serif;}
 h1 {font-weight: 700; font-size: 30px; text-align: center;}
-p, a {font-size: 16;}
+p, a, li {font-size: 16; line-height: 30px;}
 
 
 
@@ -52,13 +52,68 @@ p, a {font-size: 16;}
     margin-left: 15px; 
 }
 
+
 /* ==== Image Carousel ==== */
 
 .carousel {
     height: 200px;
     background-color: orange;
 }
+    
+/* ==== About Us ==== */
+.about {
+    padding: 10px 20px;
+    text-indent: 30px;
+    background-color: white;
+}
 
+.about div {
+    ---width: 800px;
+    margin-left: 20%;
+}
+
+.about h1 {color: #404e66}
+
+/*@media (max-width: 800px) {
+    .about div {
+        margin-left: 0;
+        width: 700px;
+    }
+}*/
+
+/* ==== Testimonials ==== */
+.testimonials {
+    padding: 10px 150px;
+    color: white;
+    text-indent: -40px;
+    background-color: #25334d;}
+
+/* ==== Our Services ==== */
+.services {
+    padding: 10px 40px;
+    text-indent: 30px;
+    background-color: white;
+}
+
+.services div {
+    margin-left: 20%;
+    ---width: 800px;
+}
+
+.services h1, ul {color: 25344d}
+
+.services ul { 
+    display: inline-block;
+    padding: 10px; 
+    font-weight: 700;
+}
+
+/*@media (max-width: 800px) {
+    .services div {
+        margin-left: 0;
+        width: 700px;
+    }
+}*/
 
 /* ==== Footer ==== */
 .footer {
