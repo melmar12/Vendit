@@ -158,14 +158,16 @@ p, a, li {font-size: 16; line-height: 30px;}
     background-color: #57657b;
 }
 
-.map {
-    background-color: lightgoldenrodyellow;
+#map {
+    --background-color: lightgoldenrodyellow;
+    height: 200px;
 }
 
 .contact-info {
     padding: 30px 0px;
     width: 450px;
     background-color: #404e66;
+    z-index: 7;
 }
 
 .copyright {
