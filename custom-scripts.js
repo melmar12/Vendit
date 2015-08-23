@@ -26,14 +26,30 @@ $(window).load(function() {
 
 
 // google maps
-   var map;
 
     function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: {
-                lat: -34.397, 
-                lng: 150.644
+        
+       var myLatLng = {lat: 29.612740, lng: -95.545074};
+    
+       var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 29.613616, lng: -95.556722},
+            zoom: 15,
+            zoomControl: true,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.TOP_CENTER
             },
-            zoom: 8
+            streetViewControl: true,
+            streetViewControlOptions: {
+                position: google.maps.ControlPosition.TOP_CENTER
+            }
         });
+        
+         var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+
+        
+        
     };
