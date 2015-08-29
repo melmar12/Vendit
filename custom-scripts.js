@@ -1,6 +1,6 @@
 
 // default loaded content 
-$( ".Content" ).load( "home.html" );
+$( ".Content" ).load( "parents.html" );
 
 
 
@@ -19,7 +19,6 @@ $(window).load(function() {
         arrows: true,
         dots: true,
     
-
     });
    
 });
@@ -53,3 +52,44 @@ $(window).load(function() {
         
         
     };
+
+    // resources links
+
+    // "Calendar" link clicked
+    // make Calendar links visable
+    // remove this class when other main links are clicked
+    // click the year link (2015)
+    // add year to end of class (.012015) Jan 2015
+
+    // when a is clicked (.this ??)
+    // take id name
+    // add "-file" to end of id
+    // use new id "id-file" and replace HTML href=".." to display correct file name
+
+
+$(document).ready(function() {
+
+
+$("#Year2016").click(function() {
+
+    // add: if 'this' is = 'this'+2016 then do nothing
+
+    $('.Month a').each(function(){ // if class char length is = or > 3 do this
+        $(this).attr("class", $(this).attr('class') + "2016");
+    });
+
+
+});
+
+
+
+
+
+$(".month a").click(function() {
+         $('#pdf_content').attr("data", "Cal/" + $(this).attr('class') + ".pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0");
+});
+
+
+});
+
+    
