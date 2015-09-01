@@ -1,10 +1,10 @@
 
 // default loaded content 
-$( ".Content" ).load( "parents.html" );
+$( ".Content" ).load( "home.html" );
 
 
 
-
+// window load functions 
 $(window).load(function() {
     // image carousel
     $('.flexslider').flexslider( {
@@ -25,71 +25,54 @@ $(window).load(function() {
 
 
 // google maps
-
-    function initMap() {
+function initMap() {
         
-       var myLatLng = {lat: 29.612740, lng: -95.545074};
+    var myLatLng = {lat: 29.612740, lng: -95.545074};
     
-       var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 29.613616, lng: -95.556722},
-            zoom: 15,
-            zoomControl: true,
-            zoomControlOptions: {
-                position: google.maps.ControlPosition.TOP_CENTER
-            },
-            streetViewControl: true,
-            streetViewControlOptions: {
-                position: google.maps.ControlPosition.TOP_CENTER
-            }
-        });
-        
-         var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Hello World!'
-        });
-
-        
-        
-    };
-
-    // resources links
-
-    // "Calendar" link clicked
-    // make Calendar links visable
-    // remove this class when other main links are clicked
-    // click the year link (2015)
-    // add year to end of class (.012015) Jan 2015
-
-    // when a is clicked (.this ??)
-    // take id name
-    // add "-file" to end of id
-    // use new id "id-file" and replace HTML href=".." to display correct file name
-
-
-$(document).ready(function() {
-
-
-$("#Year2016").click(function() {
-
-    // add: if 'this' is = 'this'+2016 then do nothing
-
-    $('.Month a').each(function(){ // if class char length is = or > 3 do this
-        $(this).attr("class", $(this).attr('class') + "2016");
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 29.613616, lng: -95.556722},
+        zoom: 15,
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.TOP_CENTER
+        },
+        streetViewControl: true,
+        streetViewControlOptions: {
+            position: google.maps.ControlPosition.TOP_CENTER
+        }
     });
 
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+    });       
+};
 
-});
+// twitter widget js
+!function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0],
+    p=/^http:/.test(d.location)?'http':'https';
+
+    if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src=p+"://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js,fjs);
+    }
+}(document,"script","twitter-wjs");
 
 
-
-
-
-$(".month a").click(function() {
-         $('#pdf_content').attr("data", "Cal/" + $(this).attr('class') + ".pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0");
-});
-
-
-});
+// resources links
+$(document).ready(function() {
+    $(".resources a").click(function() {
+             $('#pdf_content').attr("data", "Cal/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
+    });
+}); // TODO: fix page jumping when links are clicked 
 
     
+
+
+
+
+

@@ -1,3 +1,9 @@
+/*
+TODO:
+- lowercase and hypeniate all class names
+
+*/
+
 body {
     margin: 0;
     background-color: blueviolet;
@@ -181,3 +187,33 @@ p, a, li {font-size: 16; line-height: 30px;}
     font-size: 30;
 }
 
+/* ==== Anouncements ==== */
+.anouncements {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.twitter-timeline {
+}
+
+/* ==== Resources ==== */
+.resources {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.resources-links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.resources-links a {
+    padding-left: 30px;
+}
+
+#pdf object {
+    width: 600px;
+    height: 500px;
+}
