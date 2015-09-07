@@ -11,7 +11,7 @@ TODO:
 
 $( ".Content" ).load( "home.html" );
 
-$( ".parents-link" ).live('click', function() {
+$( ".parents-link" ).click(function() {
   $( ".Content" ).load( "parents.html" );
 });
 
@@ -19,14 +19,14 @@ $( ".home-link" ).click(function() {
   $( ".Content" ).load( "home.html" );
 });
 
-// window load functions 
+// Window Load Functions 
 $(window).load(function() {
-    // image carousel
+    // image carousel - plugin 
     $('.flexslider').flexslider( {
         animation: "slide",
     });
     
-    // text carousel
+    // text carousel - plugin
     $('.text-carousel').slick({
         slidesToShow: 1,
         autoplay: true,
@@ -34,12 +34,12 @@ $(window).load(function() {
         arrows: true,
         dots: true,
     
-    });
+    }); // TODO: fix next/prev buttons
    
 });
 
 
-// google maps
+// Google Maps - plugin 
 function initMap() {
         
     var myLatLng = {lat: 29.612740, lng: -95.545074};
@@ -64,7 +64,7 @@ function initMap() {
     });       
 };
 
-// twitter widget js
+// Twitter Widget js - plugin
 !function(d,s,id){
     var js,fjs=d.getElementsByTagName(s)[0],
     p=/^http:/.test(d.location)?'http':'https';
@@ -78,7 +78,7 @@ function initMap() {
 }(document,"script","twitter-wjs");
 
 
-// resources links
+// Resources Links
 $(document).ready(function() {
     $(".resources a").click(function() {
              $('#pdf_content').attr("data", "Cal/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
@@ -87,11 +87,11 @@ $(document).ready(function() {
 
 
 // Sticky Navigation 
-var nav             = document.querySelector('.nav'),
-    nav_height      = getComputedStyle(nav).height.split('px')[0],
-    nav_links              = document.querySelector('.nav-links'),
-    nav_links_height       = getComputedStyle(nav_links).height.split('px')[0],
-    sticky_class          = 'is-fixed';
+var nav                 = document.querySelector('.nav'),
+    nav_height          = getComputedStyle(nav).height.split('px')[0],
+    nav_links           = document.querySelector('.nav-links'),
+    nav_links_height    = getComputedStyle(nav_links).height.split('px')[0],
+    sticky_class        = 'is-fixed';
     unfixed             = 'unfixed'
 
 
@@ -108,7 +108,7 @@ function stickyScroll(e) {
 }
 
 window.addEventListener('scroll', stickyScroll, false);
-// TODO: slide back up effect?
+// TODO: reverse slide up effect?
 
     
 

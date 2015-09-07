@@ -1,22 +1,15 @@
 /*
 TODO:
-- lowercase and hypeniate all class names
+- lowercase and hypeniate all class names (keep things consistent)
 - start making things responsive for mobile 
-- link hover, clicks and actives 
+- link hover, clicks, active links, highlight  
 
 */
 
 
 
-body {
-    margin: 0;
-    background-color: blueviolet;
-}
-
-.flex-box {
-    display: flex;
-    justify-content: center;
-}
+body {margin: 0; background-color: blueviolet;}
+.flex-box {display: flex; justify-content: center;}
 
 /* ==== Typography ==== */
 * {font-family: Roboto, sans-serif;}
