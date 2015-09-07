@@ -2,31 +2,16 @@
 TODO:
 
 - reorganize code order
-
+- fix page jumping when resources links are clicked 
 */
 
-
-// default loaded content 
-
-
-$( ".Content" ).load( "home.html" );
-
-$( ".parents-link" ).click(function() {
-  $( ".Content" ).load( "parents.html" );
-});
-
-$( ".home-link" ).click(function() {
-  $( ".Content" ).load( "home.html" );
-});
-
-// Window Load Functions 
 $(window).load(function() {
-    // image carousel - plugin 
+    // Image Carousel - plugin 
     $('.flexslider').flexslider( {
         animation: "slide",
     });
     
-    // text carousel - plugin
+    // Text Carousel - plugin
     $('.text-carousel').slick({
         slidesToShow: 1,
         autoplay: true,
@@ -34,12 +19,12 @@ $(window).load(function() {
         arrows: true,
         dots: true,
     
-    }); // TODO: fix next/prev buttons
+    }); 
    
 });
 
 
-// Google Maps - plugin 
+// Google Maps  
 function initMap() {
         
     var myLatLng = {lat: 29.612740, lng: -95.545074};
@@ -64,7 +49,7 @@ function initMap() {
     });       
 };
 
-// Twitter Widget js - plugin
+// Twitter Widget
 !function(d,s,id){
     var js,fjs=d.getElementsByTagName(s)[0],
     p=/^http:/.test(d.location)?'http':'https';
@@ -83,7 +68,7 @@ $(document).ready(function() {
     $(".resources a").click(function() {
              $('#pdf_content').attr("data", "Cal/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
     });
-}); // TODO: fix page jumping when links are clicked 
+});
 
 
 // Sticky Navigation 

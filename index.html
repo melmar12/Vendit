@@ -1,3 +1,12 @@
+<!-- TODO:
+- delete home.html and parents.html     
+- add doc type
+- reorder links
+- add icons
+- default pdf file? 
+- add Day Hab Calendars to resources
+-->
+
 <html>
     <head>
         <title>Providence Treatment Center</title>
@@ -17,7 +26,6 @@
             <h2 class="text-logo">Providence</h2>
             <h2 class="text-logo" id="sub-text-logo">Treatment Center</h2>
         </div>
-        
         <div id="left-nav">
             <ul>
                 <li> <a>English | Spanish</a></li>
@@ -25,7 +33,6 @@
                 <li>email@email.com</li>
             </ul>
         </div>
-        
         <div class="nav-links">
             <a class="home-link">Home</a>
             <a class="parents-link">Parents Page</a>
@@ -36,7 +43,88 @@
     </div>
     
     <div class="content">
-        <!-- Inject relevant content here with Ajax -->
+
+        <div class="carousel">
+            <div class="flexslider">
+                  <ul class="slides">
+                        <li>
+                            <img src="temp.jpg" />
+                            <p class="caption">#1 image caption</p>
+                        </li>
+                        <li>
+                            <img src="temp.jpg" />
+                            <p class="caption">#2 image caption</p>
+                        </li>
+                        <li>
+                            <img src="temp.jpg" />
+                            <p class="caption">#3 image caption</p>
+                        </li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="about flex-box">
+            <div>
+                <h1>ABOUT US</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh augue, eleifend hendrerit placerat sed, facilisis sit amet odio. Duis auctor pulvinar blandit. Vestibulum lectus lorem, molestie aliquet interdum eget, fringilla ut lectus. Praesent orci libero, faucibus vitae neque id, molestie commodo felis. Sed accumsan lorem a sapien commodo ultrices. Etiam sagittis ex in odio scelerisque accumsan. Aliquam sollicitudin luctus tortor, et blandit dolor auctor at.</p>
+            </div>    
+        </div>
+
+        <div class="testimonials">
+            <div class="wrapper flex-box">
+                <div class="text-carousel">
+                    <div><p>"#1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh augue, eleifend hendrerit placerat sed, facilisis sit amet odio." - Anon</p></div>
+                    <div><p>"#2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh augue, eleifend hendrerit placerat sed, facilisis sit amet odio." - Anon</p></div>
+                    <div><p>"#3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh augue, eleifend hendrerit placerat sed, facilisis sit amet odio." - Anon</p></div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="Services flex-box">
+            <div>
+                <h1>OUR SERVICES</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh augue, eleifend hendrerit placerat sed, facilisis sit amet odio. Duis auctor pulvinar blandit. Vestibulum lectus lorem, molestie aliquet interdum eget, fringilla ut lectus. Praesent orci libero, faucibus vitae neque id, molestie commodo felis. Sed accumsan lorem a sapien commodo ultrices. Etiam sagittis ex in odio scelerisque accumsan. Aliquam sollicitudin luctus tortor, et blandit dolor auctor at.</p>
+                <div>
+                    <ul>
+                        <li>Autism</li>
+                        <li>Mental Retardation</li>
+                        <li>Developmental Disabilities</li>
+                    </ul>
+                    <ul>
+                        <li>Multiply Impaired</li>
+                        <li>PDD</li>
+                        <li>ODD</li>
+                    </ul>
+                    <ul>
+                        <li>ADHA</li>
+                        <li>Bipolar Disorder</li>
+                        <li>Major Depression</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="anouncements flex-box">
+            <h1>ANOUNCEMENTS</h1>
+                    <a class="twitter-timeline"  href="https://twitter.com/sillymnm" data-widget-id="638832779543711744">Tweets by @sillymnm</a>                     
+        </div>
+            
+        <div class="resources flex-box">
+            <h1>RESOURCES</h1>
+            <div class="resources-links">
+                <!-- add Day Hab Calendars too? -->
+                <a class="Cal2015">2015 Calendar</a>
+                <a class="Cal2016">2016 Calendar</a>
+                <a class="">School Supply List</a>
+                <a class="">Lunch Menu</a>
+            </div>
+            <div id="pdf">
+                <object type="application/pdf" data="Cal/Cal2015.pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
+                    <p>Not Available</p>
+                </object>
+            </div>
+        </div>
+
     </div>  
         
     <div class="footer">
@@ -57,7 +145,10 @@
     </div>
 
         
-       
+     
+
+
+
     
     <script src="jquery.js"></script>
     <!-- google maps --> 
@@ -65,7 +156,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6J6WFaD2V_bYZNIN6499yEtedZA5qW50&callback=initMap">
     </script> 
     <!-- image carousel --> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="jquery.flexslider.js"></script>
     <!-- text carousel -->
     <script type="text/javascript" src="slick/slick.min.js"></script> 

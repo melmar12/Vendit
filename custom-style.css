@@ -3,6 +3,7 @@ TODO:
 - lowercase and hypeniate all class names (keep things consistent)
 - start making things responsive for mobile 
 - link hover, clicks, active links, highlight  
+- define rosource module height
 
 */
 
@@ -216,7 +217,7 @@ p, a, li {font-size: 16; line-height: 30px;}
 /* ==== Anouncements ==== */
 .anouncements {
     background-color: white;
-    padding-top: 200px;
+    --padding-top: 200px;
 }
 
 .anouncements h1 {
@@ -226,7 +227,7 @@ p, a, li {font-size: 16; line-height: 30px;}
 
 /* ==== Resources ==== */
 .resources {
-        background-color: white;
+    background-color: white;
 }
 
 .resources h1 {
