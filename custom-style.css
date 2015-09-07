@@ -1,8 +1,12 @@
 /*
 TODO:
 - lowercase and hypeniate all class names
+- start making things responsive for mobile 
+- link hover, clicks and actives 
 
 */
+
+
 
 body {
     margin: 0;
@@ -21,9 +25,13 @@ p, a, li {font-size: 16; line-height: 30px;}
 
 
 /* ==== Navigation ==== */
-.Nav {
-    background-color: #56657b;
+.nav {
+    height: 150px;
+    background-color: rgba(63,77,101,.8);
     color: white;
+    margin-bottom: -200px;
+    z-index: 500000000;
+    position: relative;
 }
 
 #logo-box {
@@ -52,21 +60,93 @@ p, a, li {font-size: 16; line-height: 30px;}
     line-height: 10px;
 }
 
-.links {
+.nav-links {
+    height: 25px;
     marggin-left: 10px;
     padding: 5px;
-    background-color: #404e66;
+    background-color: rgba(63,77,101,.4);
 }
 
-.links a {
+.nav-links a {
     text-decoration: none;
     color: white;
     margin-left: 15px; 
 }
+/*toggle class*/
+.is-fixed {
+    position: fixed;
+    margin-top: -125px;
+    width: 100%;
+    padding: 25px 0 25px 0;
+    background-color: rgba(63,77,101,.9);
+    -webkit-animation: slideInDown 5s;
+    animation: slideInDown .2s;
+
+}
+
+.unfixed {
+    animation: slideInUp;
+}
+
+/*from animate.css*/
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
 
 
 /* ==== Image Carousel ==== */
 .carousel {
+    position: relative;
     background-color: orange;
     margin-bottom: -60px; /* fixing weird margin */
 }

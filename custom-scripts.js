@@ -1,8 +1,23 @@
+/*
+TODO:
+
+- reorganize code order
+
+*/
+
 
 // default loaded content 
+
+
 $( ".Content" ).load( "home.html" );
 
+$( ".parents-link" ).live('click', function() {
+  $( ".Content" ).load( "parents.html" );
+});
 
+$( ".home-link" ).click(function() {
+  $( ".Content" ).load( "home.html" );
+});
 
 // window load functions 
 $(window).load(function() {
@@ -70,8 +85,32 @@ $(document).ready(function() {
     });
 }); // TODO: fix page jumping when links are clicked 
 
-    
 
+// Sticky Navigation 
+var nav             = document.querySelector('.nav'),
+    nav_height      = getComputedStyle(nav).height.split('px')[0],
+    nav_links              = document.querySelector('.nav-links'),
+    nav_links_height       = getComputedStyle(nav_links).height.split('px')[0],
+    sticky_class          = 'is-fixed';
+    unfixed             = 'unfixed'
+
+
+function stickyScroll(e) {
+
+  if( window.pageYOffset > (nav_height) ) {
+    nav_links.classList.add(sticky_class);
+  }
+
+  if( window.pageYOffset < (nav_height) ) {
+    nav_links.classList.remove(sticky_class);
+
+  }
+}
+
+window.addEventListener('scroll', stickyScroll, false);
+// TODO: slide back up effect?
+
+    
 
 
 
