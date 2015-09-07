@@ -141,7 +141,9 @@ p, a, li {font-size: 16; line-height: 30px;}
 .carousel {
     position: relative;
     background-color: orange;
-    margin-bottom: -60px; /* fixing weird margin */
+    overflow: hidden;
+    height: 700px;
+    --margin-bottom: -60px; /* fixing weird margin */
 }
 .caption {
     position: absolute;
@@ -174,6 +176,7 @@ p, a, li {font-size: 16; line-height: 30px;}
 .testimonials { 
     background-image: url(temp.jpg);
     background-size: cover;
+    overflow: hidden;
 }
 
 .testimonials .wrapper {
