@@ -9,7 +9,7 @@ TODO:
 // default loaded content 
 
 
-$( ".Content" ).load( "parents.html" );
+$( ".Content" ).load( "home.html" );
 
 $( ".parents-link" ).click(function() {
   $( ".Content" ).load( "parents.html" );
