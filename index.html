@@ -1,43 +1,44 @@
 <!-- TODO:
 - delete home.html and parents.html     
-- add doc type
-- reorder links
-- add icons
-- default pdf file? 
 - add Day Hab Calendars to resources
 -->
 
 <html>
     <head>
         <title>Providence Treatment Center</title>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- custom css -->
         <link type="text/css" rel="stylesheet" href="custom-style.css">
+         <!-- google fonts -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
         <meta charset="utf-8"/> <!-- response to Firefox error message -->
         <!-- image carousel -->
         <link rel="stylesheet" href="flexslider.css" type="text/css">
-         <!-- text carousel -->
+        <!-- text carousel -->
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
     <body>
     
-    <div class="nav">
+    <div class="navv">
         <div id="logo-box">
             <h2 class="text-logo">Providence</h2>
             <h2 class="text-logo" id="sub-text-logo">Treatment Center</h2>
         </div>
         <div id="left-nav">
             <ul>
-                <li> <a>English | Spanish</a></li>
-                <li>(281) 208-1117</li>
-                <li>email@email.com</li>
+                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span>(281) 208-1117</li>
+                <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>email@email.com</li>
             </ul>
         </div>
         <div class="nav-links">
-            <a class="home-link">Home</a>
-            <a class="parents-link">Parents Page</a>
+            <a href="" class="">Home</a>
+            <a class="">Parents Page</a>
             <a class="">About Us</a>
             <a class="">Services</a>
+            <a class="">Anouncements</a>
+            <a class="">Resources</a>
             <a class="">Contact Us</a>
         </div>
     </div>
@@ -80,25 +81,25 @@
             </div>    
         </div>
 
-        <div class="Services flex-box">
+        <div class="services flex-box">
             <div>
                 <h1>OUR SERVICES</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh augue, eleifend hendrerit placerat sed, facilisis sit amet odio. Duis auctor pulvinar blandit. Vestibulum lectus lorem, molestie aliquet interdum eget, fringilla ut lectus. Praesent orci libero, faucibus vitae neque id, molestie commodo felis. Sed accumsan lorem a sapien commodo ultrices. Etiam sagittis ex in odio scelerisque accumsan. Aliquam sollicitudin luctus tortor, et blandit dolor auctor at.</p>
                 <div>
                     <ul>
-                        <li>Autism</li>
-                        <li>Mental Retardation</li>
-                        <li>Developmental Disabilities</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Autism</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Mental Retardation</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Developmental Disabilities</li>
                     </ul>
                     <ul>
-                        <li>Multiply Impaired</li>
-                        <li>PDD</li>
-                        <li>ODD</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Multiply Impaired</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>PDD</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>ODD</li>
                     </ul>
                     <ul>
-                        <li>ADHA</li>
-                        <li>Bipolar Disorder</li>
-                        <li>Major Depression</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>ADHA</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Bipolar Disorder</li>
+                        <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Major Depression</li>
                     </ul>
                 </div>
             </div>
@@ -131,14 +132,13 @@
         <h1>CONTACT US</h1>
         <div class="contact-info flex-box">
                 <ul>
-                    <li>(281) 208-1117</li>
-                    <li>example@email.com</li>
-                    <li>311 Present Street
-                Missouri City, TX  77489</li>
+                    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(281) 208-1117</li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>example@email.com</li>
+                    <li><br>311 Present Street
+                Missouri City<br> TX  77489</li>
                 </ul>
-            </div>
-        <div id="map">
         </div>
+        <div id="map"></div>
          <div class="copyright">
             <p>Copyright © 2015 Providence Treatment Center</p>    
         </div>

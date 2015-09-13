@@ -1,10 +1,7 @@
 /*
 TODO:
-- lowercase and hypeniate all class names (keep things consistent)
-- start making things responsive for mobile 
-- link hover, clicks, active links, highlight  
-- define rosource module height
-
+- mobile (Nav, Carousel, About, Testimonials, Services, Resources, Contact, Copyright) 
+- define anoucement module height and padding 
 */
 
 
@@ -16,10 +13,14 @@ body {margin: 0; background-color: blueviolet;}
 * {font-family: Roboto, sans-serif;}
 h1 {font-weight: 700; font-size: 30px; text-align: center;}
 p, a, li {font-size: 16; line-height: 30px;}
+ul{list-style-type: none;}
+.glyphicon {color: #a9fa00; padding-right: 10px;}
+    /* a:hover at bottom */
+
 
 
 /* ==== Navigation ==== */
-.nav {
+.navv {
     height: 150px;
     background-color: rgba(63,77,101,.8);
     color: white;
@@ -42,22 +43,22 @@ p, a, li {font-size: 16; line-height: 30px;}
 
 #sub-text-logo {
     font-size: 34;
-    margin-top: -60px;
+    margin-top: -20px;
     margin-left: 3px;   
 }
 
 #left-nav {
     display: inline-block;
     float: right;
-    width: 200px;
+    width: 250px;
     padding: 10px;
     line-height: 10px;
 }
 
 .nav-links {
-    height: 25px;
     marggin-left: 10px;
     padding: 5px;
+    margin-top: 10px;
     background-color: rgba(63,77,101,.4);
 }
 
@@ -66,12 +67,14 @@ p, a, li {font-size: 16; line-height: 30px;}
     color: white;
     margin-left: 15px; 
 }
+
 /*toggle class*/
 .is-fixed {
     position: fixed;
-    margin-top: -125px;
+    font-size: 25px;
+    margin-top: -110px;
     width: 100%;
-    padding: 25px 0 25px 0;
+    padding: 25px 0px 20px 0px;
     background-color: rgba(63,77,101,.9);
     -webkit-animation: slideInDown 5s;
     animation: slideInDown .2s;
@@ -144,7 +147,6 @@ p, a, li {font-size: 16; line-height: 30px;}
     background-color: orange;
     overflow: hidden;
     height: 700px;
-    --margin-bottom: -60px; /* fixing weird margin */
 }
 .caption {
     position: absolute;
@@ -161,7 +163,7 @@ p, a, li {font-size: 16; line-height: 30px;}
 
 /* ==== About Us ==== */
 .about {
-    padding: 10px 20px;
+    padding: 50px 20px 100px 20px;
     text-indent: 30px;
     background-color: white;
 }
@@ -172,8 +174,6 @@ p, a, li {font-size: 16; line-height: 30px;}
 
 
 /* ==== Testimonials ==== */
-
-
 .testimonials { 
     background-image: url(temp.jpg);
     background-size: cover;
@@ -199,10 +199,12 @@ p, a, li {font-size: 16; line-height: 30px;}
 
 /* ==== Our Services ==== */
 .services {
-    padding: 10px 20px;
-    text-indent: 30px;
+    padding: 50px 20px 100px 20px;
     background-color: white;
+    border-bottom: 1px solid #e8e8e8;
 }
+
+.services p {text-indent: 30px;}
 
 .services div {max-width: 800px;}
 
@@ -217,7 +219,7 @@ p, a, li {font-size: 16; line-height: 30px;}
 /* ==== Anouncements ==== */
 .anouncements {
     background-color: white;
-    --padding-top: 200px;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .anouncements h1 {
@@ -227,43 +229,13 @@ p, a, li {font-size: 16; line-height: 30px;}
 
 /* ==== Resources ==== */
 .resources {
+    height: 800px;
     background-color: white;
 }
 
-.resources h1 {
-    color: #24334c;
-}
+.resources h1, .resources a {color: #24334c;}
+#pdf {border-bottom: 5px solid #3d3d3d;}
 
-
-/* ==== Footer ==== */
-.footer {
-    padding-top: 8px;
-    color: white;
-    background-color: #57657b;
-}
-
-#map {
-    height: 200px;
-}
-
-.contact-info {
-    padding: 30px 0px;
-    height: 140px;
-    width: 48%;
-    background-color: rgba(64,77,102,.9);
-    position: absolute;
-    z-index: 7;
-}
-
-.copyright {
-    padding: 1px 10px;
-    background-color: #25334d;
-    text-align: right;
-}
-
-#Jan {
-    font-size: 30;
-}
 
 /* ==== Anouncements ==== */
 .anouncements {
@@ -295,3 +267,31 @@ p, a, li {font-size: 16; line-height: 30px;}
     width: 600px;
     height: 500px;
 }
+
+
+/* ==== Footer ==== */
+.footer {
+    padding-top: 1px;
+    color: white;
+    background-color: #404e66;
+}
+
+#map {height: 300px;}
+
+.contact-info {
+    padding: 80px 0px;
+    height: 300px;
+    width: 48%;
+    background-color: rgba(37,51,77,.7);
+    position: absolute;
+    z-index: 7;
+}
+
+.copyright {
+    padding: 10px 10px 1px 0px;
+    line-height: 20px;
+    background-color: #25334d;
+    text-align: right;
+}
+
+a:hover {color: #a9fa00; text-decoration: none;}

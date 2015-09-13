@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 
 // Sticky Navigation 
-var nav                 = document.querySelector('.nav'),
+var nav                 = document.querySelector('.navv'),
     nav_height          = getComputedStyle(nav).height.split('px')[0],
     nav_links           = document.querySelector('.nav-links'),
     nav_links_height    = getComputedStyle(nav_links).height.split('px')[0],
