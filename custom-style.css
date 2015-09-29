@@ -2,20 +2,24 @@
 TODO:
 - mobile (Nav, Carousel, About, Testimonials, Services, Resources, Contact, Copyright) 
 - define anoucement module height and padding 
+- style testimonials 
+- padding to navigation
+- padding to copyright
+- organize flex atributes
 */
 
 
 
-body {margin: 0; background-color: blueviolet;}
+body {margin: 0; --background-color: blueviolet;}
 .flex-box {display: flex; justify-content: center;}
 
 /* ==== Typography ==== */
 * {font-family: Roboto, sans-serif;}
-h1 {font-weight: 700; font-size: 30px; text-align: center;}
+h1 {font-weight: 700; font-size: 30px; text-align: center; padding-bottom: 15px;}
 p, a, li {font-size: 16; line-height: 30px;}
 ul{list-style-type: none;}
-.glyphicon {color: #a9fa00; padding-right: 10px;}
-    /* a:hover at bottom */
+.glyphicon {color: #a9fa00; padding-right: 13px;}
+    /* a:hover{} at bottom */
 
 
 
@@ -67,6 +71,15 @@ ul{list-style-type: none;}
     color: white;
     margin-left: 15px; 
 }
+.mobile-nav-button {
+    visibility: hidden;
+    position: fixed;
+    z-index: 957495729;
+    padding: 40px;
+}
+.glyphicon-align-justify {
+    font-size: 6em;
+}
 
 /*toggle class*/
 .is-fixed {
@@ -84,6 +97,7 @@ ul{list-style-type: none;}
 .unfixed {
     animation: slideInUp;
 }
+
 
 /*from animate.css*/
 @-webkit-keyframes slideInDown {
@@ -139,6 +153,40 @@ ul{list-style-type: none;}
 
 
 
+@media screen and (max-width: 1000px) {
+    .mobile-nav-button {
+        visibility: inherit;
+    }
+    #left-nav, .text-logo { visibility: hidden}
+    .navv {
+        visibility: hidden;
+        position: fixed;
+        margin-bottom: 0px;
+        height: 100%;
+        width: 500px;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links {
+        margin-top: -20px;
+        padding-left: 20px;
+        background-color: transparent;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links a {
+        width: 400px;
+        font-size: 50px;
+        line-height: 3;
+        border-bottom: 1px solid grey;    
+    }
+}
+.is-visible {
+    visibility: inherit;
+}
+
 
 
 /* ==== Image Carousel ==== */
@@ -181,8 +229,10 @@ ul{list-style-type: none;}
 }
 
 .testimonials .wrapper {
+    padding-top: 50px;
     width: 100%;
     background-color: rgba(37,51,77,.7);
+    height: 210px;
 }
 
 .text-carousel {
@@ -191,10 +241,18 @@ ul{list-style-type: none;}
 }
 
  .text-carousel p {
-    padding: 10px 150px;
+    padding: 0 150px;
     color: white;
-    text-indent: -40px;      
+    text-indent: 40px;      
 }
+
+.big-quote {
+    height: 30px;
+    position: absolute;
+    margin-left: 140px;
+}
+
+.name {font-style: italic;}
 
 
 /* ==== Our Services ==== */
@@ -215,11 +273,21 @@ ul{list-style-type: none;}
     font-weight: 700;
 }
 
+.services ul li {
+    color: #57667c;
+    padding: 10px;
+    font-size: 20px;
+}
+
 
 /* ==== Anouncements ==== */
 .anouncements {
     background-color: white;
     border-bottom: 1px solid #e8e8e8;
+
+     flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
 .anouncements h1 {
@@ -227,45 +295,37 @@ ul{list-style-type: none;}
 }
 
 
+
 /* ==== Resources ==== */
 .resources {
     height: 800px;
     background-color: white;
-}
+    padding-bottom: 50px;
 
-.resources h1, .resources a {color: #24334c;}
-#pdf {border-bottom: 5px solid #3d3d3d;}
-
-
-/* ==== Anouncements ==== */
-.anouncements {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
 }
-.twitter-timeline {
+.resources h1, .resources a {
+    color: #24334c;
 }
-
-/* ==== Resources ==== */
-.resources {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-}
-
 .resources-links {
+    padding-bottom: 20px;
+    max-width: 600px;
+
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .resources-links a {
+    width: 200px;
     padding-left: 30px;
 }
 
 #pdf object {
     width: 600px;
     height: 500px;
+    border-bottom: 5px solid #3d3d3d;
 }
 
 
@@ -295,3 +355,5 @@ ul{list-style-type: none;}
 }
 
 a:hover {color: #a9fa00; text-decoration: none;}
+
+

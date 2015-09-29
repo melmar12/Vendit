@@ -2,7 +2,6 @@
 TODO:
 
 - reorganize code order
-- fix page jumping when resources links are clicked 
 */
 
 $(window).load(function() {
@@ -63,11 +62,20 @@ function initMap() {
 }(document,"script","twitter-wjs");
 
 
-// Resources Links
+
 $(document).ready(function() {
+    // Resources Links
     $(".resources a").click(function() {
-             $('#pdf_content').attr("data", "Cal/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
+             $('#pdf_content').attr("data", "Resources/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
     });
+    
+    
+    // mobile Navigation 
+    $(".mobile-nav-button").click(function() {
+        $(".navv").toggleClass("is-visible");
+    });
+    
+    
 });
 
 
@@ -92,8 +100,14 @@ function stickyScroll(e) {
   }
 }
 
+
+
+
+
+
+
 window.addEventListener('scroll', stickyScroll, false);
-// TODO: reverse slide up effect?
+
 
     
 
