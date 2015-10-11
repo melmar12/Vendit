@@ -8,16 +8,26 @@ TODO:
 
 
 body {margin: 0; --background-color: blueviolet;}
+
+/*classes*/
 .flex-box {display: flex; justify-content: center;}
 
-/* ==== Typography ==== */
+/*Typography*/
 * {font-family: Roboto, sans-serif;}
-h1 {font-weight: 700; font-size: 30px; text-align: center; padding-bottom: 15px;}
+h1 {font-weight: 700; font-size: 30px; text-align: center; padding-bottom: 15px; padding-top: 20px;}
 p, a, li {font-size: 16; line-height: 30px;}
 ul{list-style-type: none;}
 .glyphicon {color: #a9fa00; padding-right: 13px;}
     /* a:hover{} at bottom */
-
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 60px;
+    }
+    .glyphicon-ok {
+        font-size: 40px;
+        padding-right: 30px;
+    }
+}
 
 
 /* ==== Navigation ==== */
@@ -189,25 +199,35 @@ ul{list-style-type: none;}
 /* ==== Image Carousel ==== */
 .carousel {
     position: relative;
-    background-color: orange;
     overflow: hidden;
-    height: 700px;
+    height: ;
 }
 .caption {
     position: absolute;
+    width: 700px;
     z-index: 20;
-    margin-top: -150px;
-    padding: 20px;
+    margin-top: -220px;
+    line-height: 2;
     font-size: 40px;
     font-weight: 700;
     color: white;
-    background-color: rgba(169,250,0,.7);
-    
+}
+
+.carousel span {
+    background-color: rgba(169,250,0,.7); 
+    padding: 10px;  
+}
+@media screen and (max-width: 1000px) {
+    .caption {
+        font-size: 50px;
+        margin-top: -350px;
+    }
 }
    
 
 /* ==== About Us ==== */
 .about {
+    margin-top: -100px;
     padding: 50px 20px 100px 20px;
     text-indent: 30px;
     background-color: white;
@@ -251,10 +271,30 @@ ul{list-style-type: none;}
 
 .name {font-style: italic;}
 
+@media screen and (max-width: 1000px) {
+    .testimonials .wrapper {
+        height: 450px;
+    }
+    .text-carousel {
+        max-width: 900px;
+    }
+    .text-carousel p {
+        font-size: 40px;
+        text-indent: 100px;
+        line-height: 1.5;
+
+    }
+    .big-quote {
+        height: 60px;
+    }
+
+
+
+}
 
 /* ==== Our Services ==== */
 .services {
-    padding: 50px 20px 100px 20px;
+    padding: 0px 20px 100px 20px;
     background-color: white;
     border-bottom: 1px solid #e8e8e8;
 }
@@ -275,22 +315,33 @@ ul{list-style-type: none;}
     padding: 10px;
     font-size: 20px;
 }
+@media screen and (max-width: 1000px) {
 
+    .services ul li {
+        line-height: 2;
+        border-bottom: 1px solid #eee;
+    }
+}
 
 /* ==== Anouncements ==== */
 .anouncements {
     background-color: white;
     border-bottom: 1px solid #e8e8e8;
 
-     flex-direction: column;
+    flex-direction: column;
     align-items: center;
+    padding-top: 200px;
     padding-bottom: 50px;
 }
 
 .anouncements h1 {
     color: #24334c;
 }
-
+@media screen and (max-width: 1000px) {
+    .anouncements {
+        padding-top: 100px;
+    }
+}
 
 
 /* ==== Resources ==== */
@@ -322,13 +373,26 @@ ul{list-style-type: none;}
 #pdf object {
     width: 600px;
     height: 500px;
-    border-bottom: 5px solid #3d3d3d;
+}
+
+@media screen and (max-width: 1000px) {
+    .resources-links {
+        max-width: 900px;
+        margin-left: 100px;
+    }
+    .resources-links a {
+        width: 400px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 2;
+        padding: 20px;
+    }
 }
 
 
 /* ==== Footer ==== */
 .footer {
-    padding-top: 1px;
+    --padding-top: 1px;
     color: white;
     background-color: #404e66;
 }
@@ -349,6 +413,30 @@ ul{list-style-type: none;}
     line-height: 20px;
     background-color: #25334d;
     text-align: right;
+}
+
+
+/* 
+todo:
+1. weird 1px margin/gutter
+
+
+*/
+@media screen and (max-width: 1000px) {
+    #map {
+        height: 600px;
+    }
+    .contact-info {
+        padding-top: 100px;
+        height: 600px;
+    }
+    .contact-info li {
+        font-size: 27px;
+        line-height: 2.5;
+    }
+    .copyright {
+        font-size: 40px;
+    }
 }
 
 a:hover {color: #a9fa00; text-decoration: none;}
