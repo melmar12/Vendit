@@ -19,7 +19,11 @@ p, a, li {font-size: 16; line-height: 30px;}
 ul{list-style-type: none;}
 .glyphicon {color: #a9fa00; padding-right: 13px;}
     /* a:hover{} at bottom */
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
     h1 {
         font-size: 60px;
     }
@@ -160,7 +164,10 @@ ul{list-style-type: none;}
 
 
 
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
     .mobile-nav-button {
         visibility: inherit;
     }
@@ -217,7 +224,10 @@ ul{list-style-type: none;}
     background-color: rgba(169,250,0,.7); 
     padding: 10px;  
 }
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
     .caption {
         font-size: 50px;
         margin-top: -350px;
@@ -271,7 +281,10 @@ ul{list-style-type: none;}
 
 .name {font-style: italic;}
 
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
     .testimonials .wrapper {
         height: 450px;
     }
@@ -315,7 +328,10 @@ ul{list-style-type: none;}
     padding: 10px;
     font-size: 20px;
 }
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
 
     .services ul li {
         line-height: 2;
@@ -337,7 +353,10 @@ ul{list-style-type: none;}
 .anouncements h1 {
     color: #24334c;
 }
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
     .anouncements {
         padding-top: 100px;
     }
@@ -375,7 +394,13 @@ ul{list-style-type: none;}
     height: 500px;
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .resources {
+    height: 1000px;
+    }
     .resources-links {
         max-width: 900px;
         margin-left: 100px;
@@ -422,7 +447,10 @@ todo:
 
 
 */
-@media screen and (max-width: 1000px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
     #map {
         height: 600px;
     }
