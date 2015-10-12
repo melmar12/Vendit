@@ -196,8 +196,14 @@ ul{list-style-type: none;}
         line-height: 3;
         border-bottom: 1px solid grey;    
     }
+    .is-fixed {
+    -webkit-animation: none;
+    animation: none;
+      }
 }
-.is-visible {
+    
+
+    .is-visible {
     visibility: inherit;
 }
 
