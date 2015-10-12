@@ -7,17 +7,38 @@ TODO:
 
 
 
-body {margin: 0; --background-color: blueviolet;}
+body {
+    margin: 0; 
+}
 
 /*classes*/
-.flex-box {display: flex; justify-content: center;}
+.flex-box {
+    display: flex; 
+    justify-content: center;
+}
 
 /*Typography*/
-* {font-family: Roboto, sans-serif;}
-h1 {font-weight: 700; font-size: 30px; text-align: center; padding-bottom: 15px; padding-top: 20px;}
-p, a, li {font-size: 16; line-height: 30px;}
-ul{list-style-type: none;}
-.glyphicon {color: #a9fa00; padding-right: 13px;}
+* {
+    font-family: Roboto, sans-serif;
+}
+h1 {
+    font-weight: 700; 
+    font-size: 30px; 
+    text-align: center; 
+    padding-bottom: 15px; 
+    padding-top: 20px;
+}
+p, a, li {
+    font-size: 16px; 
+    line-height: 30px;
+}
+ul{
+    list-style-type: none;
+}
+.glyphicon {
+    color: #a9fa00; 
+    padding-right: 13px;
+}
     /* a:hover{} at bottom */
 @media only screen 
   and (min-device-width: 375px) 
@@ -31,8 +52,9 @@ ul{list-style-type: none;}
         font-size: 40px;
         padding-right: 30px;
     }
-    p {
-        font-size: 50px;
+    p, a {
+        font-size: 30px;
+        line-height: 1.8;
     }
 }
 
@@ -342,9 +364,11 @@ ul{list-style-type: none;}
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .services div {max-width: 900px;}
     .services ul li {
         line-height: 2;
         border-bottom: 1px solid #eee;
+        font-size: 40px;
     }
 }
 
