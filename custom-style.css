@@ -31,6 +31,7 @@ h1 {
 p, a, li {
     font-size: 16px; 
     line-height: 30px;
+    text-decoration: none;
 }
 ul{
     list-style-type: none;
@@ -53,7 +54,7 @@ ul{
         padding-right: 30px;
     }
     p, a {
-        font-size: 30px;
+        font-size: 35px;
         line-height: 1.8;
     }
 }
@@ -368,7 +369,7 @@ ul{
     .services ul li {
         line-height: 2;
         border-bottom: 1px solid #eee;
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
@@ -466,6 +467,9 @@ ul{
     z-index: 7;
 }
 
+.contact-info a {
+    color: white;
+}
 .copyright {
     padding: 10px 10px 1px 0px;
     line-height: 20px;
