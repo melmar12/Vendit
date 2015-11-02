@@ -1,6 +1,6 @@
 /* ==== Testimonials ==== */
 .testimonials { 
-    background-image: url(photos/Vphoto-3.jpg);
+    background-image: url(../photos/Vphoto-3.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
