@@ -168,8 +168,4 @@
     -webkit-animation: none;
     animation: none;
       }
-      
-    .is-visible {
-    visibility: inherit;
-    }
 }
